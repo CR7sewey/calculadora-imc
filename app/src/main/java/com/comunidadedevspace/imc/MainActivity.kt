@@ -1,5 +1,6 @@
 package com.comunidadedevspace.imc
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -10,6 +11,8 @@ import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.textfield.TextInputEditText
 import java.math.BigDecimal
 import java.math.RoundingMode
+
+
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -31,14 +34,24 @@ class MainActivity : AppCompatActivity() {
             val weightStr: String = weightElement.text.toString()
             val heightStr: String = heightElement.text.toString()
             if (weightStr.isEmpty() || heightStr.isEmpty()) {
-                Snackbar.make(result, "Please, insert a valid value!", Snackbar.LENGTH_LONG).show()
+                Snackbar.make(heightElement, "Please, insert a valid value!", Snackbar.LENGTH_LONG).show()
             }
             else {
                 val weight: Double = weightStr.toDouble()
                 val height: Double = heightStr.toDouble()
                 imc = calculateIMC(weight, height)
-                result.text = imc
-                result.visibility = View.VISIBLE
+
+                // Navigate to Next Activity aka screen
+                // New screen layout
+                // pass dat to new screen
+
+                // Intent - Classe do proprio android (declarar intencoes que queremos fazer - intent implicita (nao especifica componente, mas sim acao) e explicita (especifica componente) - ver ChatGPT)
+                val explicitIntent: Intent = Intent(this, ResultActivity::class.java) // atual e proxima
+                explicitIntent.putExtra(KEY_IMC,imc)
+                startActivity(explicitIntent)
+
+               // result.text = imc
+               // result.visibility = View.VISIBLE
             }
 
             /*try {
