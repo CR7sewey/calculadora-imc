@@ -6,28 +6,70 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
+    android:gravity="center_horizontal"
     tools:context=".ResultActivity">
 
-
-    <TextView
-        android:id="@+id/tv_result"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/readerResult"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="52sp"
-        android:textStyle="bold"
-        android:maxLength="5"
-        tools:text="0.00"
-        app:layout_constraintTop_toTopOf="parent"
-         />
+        android:orientation="vertical"
+        android:background="@drawable/gradiente_bg"
+        >
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/monitor_weight_24dp_5c00d2_fill0_wght200_grad0_opsz24"
+            app:tint="@color/white"
+            />
+        <TextView
+            android:id="@+id/textoIntro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="IMC calculator"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+        <TextView
+            android:id="@+id/descriptionIntro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="32dp"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:text="Below you have your result and classification!"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="52sp"
+            android:textStyle="bold"
+            android:maxLength="5"
+            android:layout_marginBottom="32dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            tools:text="0.00"
+            app:layout_constraintTop_toTopOf="parent"
+             />
     <!--tools nao aparece qunad corremos a app - so uma ferramenta -->
+    </LinearLayout>
 
     <TextView
         android:id="@+id/tv_classification_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
-        android:text="A classificação do IMC é:"
+        android:layout_marginTop="102dp"
+        android:text="Your classification is:"
       />
 
     <TextView
@@ -35,6 +77,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:text="Normal"
+        android:layout_marginTop="8dp"
         android:textStyle="bold"
         android:textSize="48sp"
         />
@@ -43,7 +86,7 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100sp"
+        android:layout_marginTop="100dp"
         android:text="Back" />
 </LinearLayout>
 

@@ -37,18 +37,26 @@ class ResultActivity : AppCompatActivity() {
 
         if (imc.toDouble().compareTo(18.5) <= 0) {
             tv_classification.text = "Magro"
+            tv_classification.setTextColor(getResources().getColor(R.color.magroColor))
         }
         else if (imc.toDouble() <= 24.9) {
             tv_classification.text= "Normal"
+            tv_classification.setTextColor(getResources().getColor(R.color.normalColor))
         }
         else if (imc.toDouble() >24.9 && imc.toDouble() <= 29.9) {
                 tv_classification.text= "Acima"
+            tv_classification.setTextColor(getResources().getColor(R.color.acimaColor))
+
         }
         else if (imc.toDouble().compareTo(39.9) <= 0) {
             tv_classification.text= "Obesidade"
+            tv_classification.setTextColor(getResources().getColor(R.color.obesidadeColor))
+
         }
         else {
             tv_classification.text= "Obesidade Morbida"
+            tv_classification.setTextColor(getResources().getColor(R.color.obesidadeMorbida))
+
         }
         println(tv_classification.text)
 

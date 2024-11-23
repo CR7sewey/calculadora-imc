@@ -3,7 +3,11 @@ Desc
 
 ## :camera_flash: Screenshots
 <!-- You can add more screenshots here if you like -->
-Screenshots
+![1st](C:\Users\Utilizador\OneDrive\Imagens\Capturas de Ecrã\Screenshot 2024-11-23 124104.png)
+<img src="C:\Users\Utilizador\OneDrive\Imagens\Capturas de Ecrã\Screenshot 2024-11-23 124104.png"/>
+
+![2nd](C:\Users\Utilizador\OneDrive\Imagens\Capturas de Ecrã\Screenshot 2024-11-23 131236.png)
+<img src="C:\Users\Utilizador\OneDrive\Imagens\Capturas de Ecrã\Screenshot 2024-11-23 131236.png"/>
 
 ## Tecnologias
 Techs
