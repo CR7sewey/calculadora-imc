@@ -14,12 +14,23 @@ and then show a new screen with the body mass index (IMC).
 ## Tech Stack
 
 Kotlin
+    - Activity
+    - Intent
+    - Snackbar
+    - ViewGroups
+        - LinearLayout
+        - ContraintLayout
+    - Views
+        - ImageView
+        - TextView
+        - EditText
+        - Button
 
 ## License
 ```
 The MIT License (MIT)
 
-Copyright (c) 2023 Roque Buarque Junior
+Copyright (c) 2024 Miguel Mota Carvalho
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
