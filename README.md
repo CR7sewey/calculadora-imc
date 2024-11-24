@@ -1,17 +1,18 @@
-# Calculadora IMC
-Desc
+# IMC calculator
+
+This project is a Native Android App (Kotlin) and was developed to build an app that allows the user to introduce his weight and height,
+and then show a new screen with the body mass index (IMC). 
 
 ## :camera_flash: Screenshots
 <!-- You can add more screenshots here if you like -->
-![1st](C:\Users\Utilizador\OneDrive\Imagens\Capturas de Ecrã\Screenshot 2024-11-23 124104.png)
-<img src="C:\Users\Utilizador\OneDrive\Imagens\Capturas de Ecrã\Screenshot 2024-11-23 124104.png"/>
+### First Screen
 
-![2nd](C:\Users\Utilizador\OneDrive\Imagens\Capturas de Ecrã\Screenshot 2024-11-23 131236.png)
-<img src="C:\Users\Utilizador\OneDrive\Imagens\Capturas de Ecrã\Screenshot 2024-11-23 131236.png"/>
 
-## Tecnologias
-Techs
+### Second Screen
 
+## Tech Stack
+
+Kotlin
 
 ## License
 ```

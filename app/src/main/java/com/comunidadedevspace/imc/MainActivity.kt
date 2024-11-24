@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         val weightElement = findViewById<TextInputEditText>(R.id.weight)
         val heightElement = findViewById<TextInputEditText>(R.id.height)
         val submitElement = findViewById<Button>(R.id.submit)
-        val result = findViewById<TextView>(R.id.result)
+        // val result = findViewById<TextView>(R.id.result)
 
 
         submitElement.setOnClickListener {
@@ -50,31 +50,8 @@ class MainActivity : AppCompatActivity() {
                 explicitIntent.putExtra(KEY_IMC,imc)
                 startActivity(explicitIntent)
 
-               // result.text = imc
-               // result.visibility = View.VISIBLE
             }
-
-            /*try {
-                val weight: Double = weightElement.text.toString().toDouble()
-                val height: Double = heightElement.text.toString().toDouble()
-                imc = calculateIMC(weight, height)
-           // }
-           // catch (e: Error) {
-              //  imc = "Please, insert a valid value!"
-             //   println(e.message)
-            //}*/
-
-            //result.text = imc
-            //result.visibility = View.VISIBLE
-            //println(weight)
         }
-
-        /*submit.setOnClickListener(object : View.OnClickListener {
-                    override fun onClick(view: View?) {
-                        imc = weight.text/(height.text*height.text);
-
-                    }
-                })*/
     }
 
     private fun calculateIMC(weight: Double, height: Double): String {
