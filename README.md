@@ -6,9 +6,10 @@ and then show a new screen with the body mass index (IMC).
 ## :camera_flash: Screenshots
 <!-- You can add more screenshots here if you like -->
 ### First Screen
-
+![Screenshot_20241124_091542](https://github.com/user-attachments/assets/628076bb-0dc2-4a0c-ba6d-3b1243a70aad)
 
 ### Second Screen
+![Screenshot_20241124_091513](https://github.com/user-attachments/assets/fc9a1fe5-184f-492f-99e4-72abfbd605d9)
 
 ## Tech Stack
 
